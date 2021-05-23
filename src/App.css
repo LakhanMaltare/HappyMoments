@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mulish', sans-serif;;
+	/* background-image:url('./images/pic21.jpg'); */
+	/* background-color:beige; */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.brand-name{
+	color:#3498db;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#header{
+	width: 100%;
+	height: 80vh;
+	margin-top: 40px;
+}
+#header h1{
+	margin: 0 0 10px 0;
+	font-size: 40px;
+	font-weight: 700;
+	color:black;
+}
+#header .btn{
+   font-weight: 500;
+   font-size: 16px;
+   letter-spacing: 1px;
+   display:inline-block;
+   padding: 10px 30px;
+   border-radius: 50px;
+   transition: 0.2s;
+   color: #3498db;
+   border: 2px solid #3498db;
+   text-decoration: none;
+}
+#header .btn:hover{
+  background: #3498db;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#header .animated{
+ animation:up-down 1s ease-in-out infinite alternate-reverse;
+}
+@-webkit-keyframes up-down{
+	0%{
+		transform: translateY(20px);
+	}
+	100%{
+		transform: translateY(-20px);
+	}
+}
+@keyframes up-down {
+	0%{
+		transform: translateY(20px);
+	}
+	100%{
+		transform: translateY(-20px);
+	}
+}
+#header h2{
+  font-size: 24px;
+  color: black;
+}
+.navbar-brand{
+	color: rgb(52, 160, 160) !important;
+	font-size: large;
+	font-weight: bold;
+}
+.menu_active{
+	font: bold;
+	border-bottom:2px solid #565387;
+}
+.nav-item{
+	font-size: x-large;
+	text-align: center;
+}
+.nav-item button{
+	font-size: large;
+	text-align: center;
+}
+.nav-item button:hover{
+	background-color:#3498db;
+	color:white
+}
+.brand-name {
+	animation: lakhan 2s infinite;
+}
+@keyframes lakhan {
+	1% {
+		color: red;
+	}
+	25% {
+		color:lawngreen;
+	}
+	50% {
+		color: blue;
+	}
+	75%{
+		color: aqua;
+	}
+	100% {
+		color: yellow;
+	}
+}
+@keyframes lakhan1 {
+	1%{
+		color: red;
+	}
+	25% {
+		color:violet;
+	}
+	50% {
+		color: blue;
+	}
+	75%{
+		color: black;
+	}
+	100% {
+		color: green
+	}
+}
+.aboutusdesc{
+	animation: lakhan1 7s infinite;
+}
+.signup{
+	margin-top: 10%;
+}
+.form-title{
+	text-align: center;
+}
+.login{
+	/* margin-top:5%;
+   margin-left: 30%;
+   margin-right: 30%; */
+   border:1px solid;
+   padding: 10px;
+}
+.login button{
+	margin-left: 40%;
+}
+.aboutusbackground{
+	/* background-image: url("E:\HappyMoments\happymoments\src\images\About.png"); */
+       margin-top:1px ;
+	   margin-bottom: 2px;
+	   height:50px;
+	   width: 300px;
+      /* object-fit: contain; */
+	   /* resize: both; */
+	/* Full height */
+	
+	/* Center and scale the image nicely */
+	/* background-position: center;
+	background-repeat: no-repeat; */
+	/* background-size: cover; */
+	/* float: center; */
+}
+.aboutusdesc{
+	color:skyblue;
+	font-weight: bold;
+	font-size: 30px;
+	/* font-family: 'Shadows Into Light', cursive; */
+	font-family: 'Calligraffitti', 'cursive';
+	font-style: italic;
+	/* font-family: 'Nunito', sans-serif; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
