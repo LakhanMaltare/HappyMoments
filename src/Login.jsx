@@ -20,6 +20,7 @@ const login=(e)=>{
       .then((userCredential) => {
         // Signed in
         var user = userCredential.user;
+        
         history.push('/home')
       })
       .catch((error) => {

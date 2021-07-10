@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
-import logo from './images/smily.png';
+import logo from './images/hm02 (4) copy.png';
 import { Button} from 'react-bootstrap'
 import './App.css'
 import firebase from './fire';
